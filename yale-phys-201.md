@@ -93,7 +93,7 @@ where $I_{enc}$ is the total current *penetrating* surface $S$.
 Maxwell's Equations (Static):
 
 $$
-\left\{\begin{matrix}
+\left\lbrace\begin{matrix}
 \oint_{S}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{S}=\frac{1}{\epsilon_0}q_{enc} & (\text{Gauss's Law})\\
 \oint_{C}\boldsymbol{B}\cdot\mathrm{d}\boldsymbol{r}=\mu_0I_{enc} & (\text{Ampère's Law})\\
 \oint_{C}\boldsymbol{E}\cdot\mathrm{d}\boldsymbol{r} = 0 & (\boldsymbol{E}\text{ is conservative})\\
@@ -186,7 +186,7 @@ where $V_0$ is the maximum voltage, $Z$ is the impedence, and the real part of $
 The current varying with time is
 
 $$
-I(t)=\mathrm{Re}\left[\frac{V_0}{\left\vert Z\right\vert}\frac{e^{i\omega t}}{e^{i\phi}}\right]=\frac{V_0}{\left\vert Z\right\vert}\cos\left(\omega t-\phi\right),
+I(t)=\mathrm{Re}\left\lbrack\frac{V_0}{\left\vert Z\right\vert}\frac{e^{i\omega t}}{e^{i\phi}}\right\rbrack=\frac{V_0}{\left\vert Z\right\vert}\cos\left(\omega t-\phi\right),
 $$
 
 where
@@ -211,4 +211,6 @@ where $\omega$ is the angular frequency of the AC signal.
 
 The impedance of an inductor is given by
 
-$$Z_L=i\omega L.$$
+$$
+Z_L=i\omega L.
+$$
