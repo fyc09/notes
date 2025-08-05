@@ -3,8 +3,9 @@
 ## Electromagnetism
 
 $$
-% \newcommand{\frac}{\dfrac}
+\renewcommand{\tilde}{\widetilde}
 \newcommand{\dd}{\mathrm{d}}
+\newcommand{\mc}{\mathscr}
 \newcommand{\bs}{\boldsymbol}
 $$
 
@@ -99,18 +100,18 @@ where $I_{enc}$ is the total current _penetrating_ surface $S$.
 Maxwell's Equations (Static):
 
 $$
-\begin{gather}
+\begin{gathered}
 \oint_{S}\bs{E}\cdot\dd\bs{S}=\frac{1}{\epsilon_0}q_{enc} & (\text{Gauss's Law})\\
 \oint_{C}\bs{B}\cdot\dd\bs{r}=\mu_0I_{enc} & (\text{Ampere's Law})\\
 \oint_{C}\bs{E}\cdot\dd\bs{r}=0 & (\bs{E}\text{ is conservative})\\
 \oint_{S}\bs{B}\cdot\dd\bs{S}=0 & (\text{No single magnetic pole})
-\end{gather}
+\end{gathered}
 $$
 
 The Lenz's Law:
 
 $$
-\mathcal{E}=-\frac{\dd\Phi}{\dd t},
+\mc{E}=-\frac{\dd\Phi}{\dd t},
 $$
 
 where $C$ is a loop made up of a real conductor, $\Phi$ is the magnetic flux through $C$,
@@ -121,10 +122,10 @@ $$
 
 where $S$ is the surface of the loop $C$.
 
-The EMF $\mathcal{E}$ can be calculated by the following equation:
+The EMF $\mc{E}$ can be calculated by the following equation:
 
 $$
-\mathcal{E}=\oint_{C}(\bs{E}+\bs{v}\times\bs{B})\cdot\dd\bs{l}
+\mc{E}=\oint_{C}(\bs{E}+\bs{v}\times\bs{B})\cdot\dd\bs{l}
 $$
 
 Plug the definition of $\Phi$ into Lenz's Law, we get Faraday's Law:
@@ -138,7 +139,7 @@ This equation replaces the 3<sup>rd</sup> equation in the previous version of Ma
 The change of flux of magnetic field through a loop can be caused by two reasons: The change of magnetic field, or the movement of loop, shown in the following equation:
 
 $$
--\mathcal{E}=\frac{\dd\Phi}{\dd t}=\int_{S}\frac{\partial\bs{B}}{\partial t}\cdot\dd\bs{A}+\oint_{C}(\bs{v}\times\dd\bs{l})\cdot\bs{B}.
+-\mc{E}=\frac{\dd\Phi}{\dd t}=\int_{S}\frac{\partial\bs{B}}{\partial t}\cdot\dd\bs{A}+\oint_{C}(\bs{v}\times\dd\bs{l})\cdot\bs{B}.
 $$
 
 The energy density stored in the magnetic field can be calculated by energy in a inductor, which is
@@ -162,23 +163,27 @@ $$
 Maxwell's Equations:
 
 $$
-\begin{gather}
+\boxed{
+\begin{gathered}
 \oint_{S=\partial{V}}\bs{E}\cdot\dd\bs{S}=\frac{1}{\epsilon_0}\int_{V}\rho\dd^3r & (\text{Gauss's Law})\\
 \oint_{S=\partial{V}}\bs{B}\cdot\dd\bs{S}=0 & (\text{No single magnetic pole})\\
 \oint_{C=\partial S}\bs{E}\cdot\dd\bs{r}=\int_S\left(-\frac{\partial\bs{B}}{\partial{t}}\right)\cdot\dd\bs{S} & (\text{Faraday's Law})\\
 \oint_{C=\partial{S}}\bs{B}\cdot\dd\bs{r}=\mu_0\int_{S}\left(\bs{j}+\epsilon_0\frac{\partial\bs{E}}{\partial{t}}\right)\cdot \dd\bs{S} & (\text{Ampere-Maxwell Law})\\
-\end{gather}
+\end{gathered}
+}
 $$
 
 By considering tiny cubes and loops, we can get the differential form of the Maxwell's Equations:
 
 $$
-\begin{gather}
+\boxed{
+\begin{gathered}
 \nabla\cdot\bs{E}=\frac{\rho}{\epsilon_0} & (\text{Gauss's Law})\\
 \nabla\cdot\bs{B}=0 & (\text{No single magnetic pole})\\
 \nabla\times\bs{E}=-\frac{\partial\bs{B}}{\partial t} & (\text{Faraday's Law})\\
 \nabla\times\bs{B}=\mu_0\bs{j}+\mu_0\epsilon_0\frac{\partial \bs{E}}{\partial t} & (\text{Ampere-Maxwell Law})\\
-\end{gather}
+\end{gathered}
+}
 $$
 
 ## Electromagnetic Wave
@@ -186,10 +191,10 @@ $$
 When in a free space, where $q$ and $I$ are zero, we found a solution for Maxwell's Equations that satisfies the wave equation:
 
 $$
-\begin{gather}
+\begin{gathered}
 \frac{\partial^2\bs{E}_z}{\partial{t^2}}=\mu_0\epsilon_0\frac{\partial^2\bs{E}_z}{\partial{t^2}}\\
 \frac{\partial^2\bs{B}_x}{\partial{t^2}}=\mu_0\epsilon_0\frac{\partial^2\bs{B}_x}{\partial{t^2}}
-\end{gather}
+\end{gathered}
 $$
 
 We can get the speed of this wave is
@@ -337,10 +342,10 @@ $$
 For a moving charge, we have
 
 $$
-\begin{gather}
+\begin{gathered}
 \rho=\frac{\rho_0}{\sqrt{1-u^2/c^2}}\\
 j=\rho\bs{v}=\frac{\rho_0\bs{v}}{\sqrt{1-v^2/c^2}}
-\end{gather}
+\end{gathered}
 $$
 
 This has the same form as the mass and momentum, so the transformation is same as the $m$ and $p$,
@@ -376,19 +381,19 @@ $$
 Consider these 2 equations from Maxwell's equations that is independent of $\rho$ and $j$,
 
 $$
-\begin{gather}
+\begin{gathered}
 \nabla\cdot\bs{B}=0\\
 \nabla\times\bs{E}+\frac{\partial\bs{B}}{\partial t}=0\\
-\end{gather}
+\end{gathered}
 $$
 
 We define $\bs{A}$ as following,
 
 $$
-\begin{gather}
+\begin{gathered}
 \bs{B}=\nabla\times\bs{A}\\
 \bs{E}=-\nabla V-\frac{\partial\bs{A}}{\partial t}\\
-\end{gather}
+\end{gathered}
 $$
 
 which is equivalent to the previous equations from Maxwell's equations.
@@ -396,10 +401,10 @@ which is equivalent to the previous equations from Maxwell's equations.
 In this definition, a given $\bs{A}$ and $V$ pair can describe a unique electromagnetic field, but for a given electromagnetic field, there are many different groups of $\bs{A}$ and $V$. For $\bs{A}$ and $V$, $\tilde{\bs{A}}$ and $\tilde{V}$ are also valid:
 
 $$
-\begin{gather}
+\begin{gathered}
 \tilde{\bs{A}}=\bs{A}+\nabla\chi\\
 \tilde{V}=V-\frac{\partial\chi}{\partial t}
-\end{gather}
+\end{gathered}
 $$
 
 This is called a _gauge transformation_. To make sure there is only one group of $\bs{A}$ and $V$, we can add a regularization term. When discussing the relativity, we use Lorentz gauge, which is
@@ -417,19 +422,19 @@ $$
 The other two Maxwell's equations are
 
 $$
-\begin{gather}
+\begin{gathered}
 \nabla\cdot\bs{E}=\frac{\rho}{\epsilon_0}\\
 \nabla\times\bs{B}=\mu_0\bs{j}+\mu_0\epsilon_0\frac{\partial\bs{E}}{\partial t}
-\end{gather}
+\end{gathered}
 $$
 
 We plug the definition of $V$ and $\bs{A}$ and Lorentz transformation into these 2 equations. We get
 
 $$
-\begin{gather}
+\begin{gathered}
 \frac{\partial^2V}{\partial x^2}+\frac{\partial^2V}{\partial y^2}+\frac{\partial^2V}{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 V}{\partial t^2}=-\frac{\rho}{\epsilon_0}\\
 \frac{\partial^2\bs{A}}{\partial x^2}+\frac{\partial^2\bs{A}}{\partial y^2}+\frac{\partial^2\bs{A}}{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 \bs{A}}{\partial t^2}=-\mu_0\bs{j}
-\end{gather}
+\end{gathered}
 $$
 
 This is a wave equation, showing the delay required by relativity. $A^\prime(t,\bs{r}^\prime)$ will influence $A(t,\bs{r})$ after $\delta t=\left\vert\bs{r}-\bs{r}^\prime\right\vert/c$.
@@ -463,10 +468,12 @@ $$
 These 2 equation are the four-vector form of Maxwell's equations:
 
 $$
-\begin{gather}
-\nabla^2A=\mu_0J\\
+\boxed{
+\begin{gathered}
+\nabla\cdot\nabla A=\mu_0J\\
 \nabla\cdot A=0.
-\end{gather}
+\end{gathered}
+}
 $$
 
 Note that we did not change the Maxwell's Equations, but rewrite it in four-vector form.
@@ -478,19 +485,86 @@ Note that we did not change the Maxwell's Equations, but rewrite it in four-vect
 Say vectors $\bs{V}=(V_x,V_y,V_z)$, $\bs{W}=(W_x,W_y,W_z)$, we can build a Tensor $\bs{T}$:
 
 $$
-\begin{gather}
-T_xx=V_xW_x\\
-T_xy=V_xW_y\\
+\begin{gathered}
+T_{xx}=V_xW_x\\
+T_{xy}=V_xW_y\\
 \cdots\\
-T_zz=V_zW_z\\
-\end{gather}
+T_{zz}=V_zW_z\\
+\end{gathered}
 $$
 
 The rotation of a tensor is achieved by rotating the vectors. Even if the tensor is not from 2 vectors, the rotation still follows the same rule.
 
-Some linear combinations of tensor's components still hold during rotation. e.g. $S=T_{xx}+T_{yy}+T_{zz}$, which is the dot product of the vectors, will not change, even if the tensor is not from 2 vectors.
+If a tensor follows the rule below, we call it an antisymmetric tensor.
+
+$$
+\begin{gathered}
+\mc{A}_{ij}=-\mc{A}_{ji}
+\end{gathered}
+$$
+
+It is obvious that
+
+$$
+\mc{A}_{ii}=0
+$$
+
+The cross product of two vectors is an antisymmetric tensor. In 1 dimension, there is no cross product (0 components); In 2D, the cross product is a value (1 components); In 3D, the cross product is a vector (3 components); In 4D, the cross product can only be represented by a tensor.
+
+---
 
 </details>
+
+A _four-tensor_ includes 16 components. The transformation of a four-tensor is according to the transformation of four-vector. Consider a four-tensor $T$ built from 2 four-vectors $V$ and $W$. To transform $T$, we apply Lorentz transformation to $V$ and $W$, and combine them to get $T^\prime$. We have
+
+$$
+T^\prime_{01}=\frac{T_{01}-\beta T_{00}-\beta T_{11}+\beta^2T_{22}}{1-\beta^2}.
+$$
+
+Similar to $\bs{B}=\nabla\times\bs{A}$, we define $\mc{F}$ as the curl of four-potential $A$, that is,
+
+$$
+\mc{F}_{\mu\nu}=\nabla_\mu A_\nu-\nabla_\nu A_\mu.\\
+$$
+
+Or, specifically,
+
+$$
+\begin{aligned}
+\mc{F}_{0x}=&-E_x/c\\
+\mc{F}_{0y}=&-E_y/c\\
+\mc{F}_{0z}=&-E_z/c\\
+\mc{F}_{xy}=&-B_z\\
+\mc{F}_{xz}=&-B_y\\
+\mc{F}_{yz}=&-B_x\\
+\end{aligned}
+$$
+
+Unlike $\bs{j}$ and $\bs{p}$, which builds up a four-vector with a scalar $c\rho$ or $E/c$, $\bs{E}$ and $\bs{B}$ together build up a four-tensor.
+
+Now, we can get the four-force of Lorentz force,
+
+$$
+F=q\mc{F}\cdot V.
+$$
+
+Finally, we get these equations,
+
+$$
+\boxed{
+\begin{gathered}
+\nabla\cdot\nabla A=\mu_0J\\
+\nabla\cdot A=0\\
+\mc{F}_{\mu\nu}=\nabla_\mu A_\nu-\nabla_\nu A_\mu.\\
+F=q\mc{F}\cdot V
+\end{gathered}
+}
+$$
+
+## Optics
+
+$$
+$$
 
 ---
 
