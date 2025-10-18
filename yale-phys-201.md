@@ -478,42 +478,35 @@ $$
 
 Note that we did not change the Maxwell's Equations, but rewrite it in four-vector form.
 
-<details>
-
-<summary>About Tensor</summary>
-
-Say vectors $\bs{V}=(V_x,V_y,V_z)$, $\bs{W}=(W_x,W_y,W_z)$, we can build a Tensor $\bs{T}$:
-
-$$
-\begin{gathered}
-T_{xx}=V_xW_x\\
-T_{xy}=V_xW_y\\
-\cdots\\
-T_{zz}=V_zW_z\\
-\end{gathered}
-$$
-
-The rotation of a tensor is achieved by rotating the vectors. Even if the tensor is not from 2 vectors, the rotation still follows the same rule.
-
-If a tensor follows the rule below, we call it an antisymmetric tensor.
-
-$$
-\begin{gathered}
-\mc{A}_{ij}=-\mc{A}_{ji}
-\end{gathered}
-$$
-
-It is obvious that
-
-$$
-\mc{A}_{ii}=0
-$$
-
-The cross product of two vectors is an antisymmetric tensor. In 1 dimension, there is no cross product (0 components); In 2D, the cross product is a value (1 components); In 3D, the cross product is a vector (3 components); In 4D, the cross product can only be represented by a tensor.
-
----
-
-</details>
+> ## Tensor
+> Say vectors $\bs{V}=(V_x,V_y,V_z)$, $\bs{W}=(W_x,W_y,W_z)$, we can build a Tensor $\bs{T}$:
+>
+> $$
+> \begin{gathered}
+> T_{xx}=V_xW_x\\
+> T_{xy}=V_xW_y\\
+> \cdots\\
+> T_{zz}=V_zW_z\\
+> \end{gathered}
+> $$
+>
+> The rotation of a tensor is achieved by rotating the vectors. Even if the tensor is not from 2 vectors, the rotation still follows the same rule.
+>
+> If a tensor follows the rule below, we call it an antisymmetric tensor.
+>
+> $$
+> \begin{gathered}
+> \mc{A}_{ij}=-\mc{A}_{ji}
+> \end{gathered}
+> $$
+>
+> It is obvious that
+>
+> $$
+> \mc{A}_{ii}=0
+> $$
+>
+> The cross product of two vectors is an antisymmetric tensor. In 1 dimension, there is no cross product (0 components); In 2D, the cross product is a value (1 components); In 3D, the cross product is a vector (3 components); In 4D, the cross product can only be represented by a tensor.
 
 A _four-tensor_ includes 16 components. The transformation of a four-tensor is according to the transformation of four-vector. Consider a four-tensor $T$ built from 2 four-vectors $V$ and $W$. To transform $T$, we apply Lorentz transformation to $V$ and $W$, and combine them to get $T^\prime$. We have
 
@@ -537,7 +530,7 @@ $$
 \mc{F}_{xy}=&-B_z\\
 \mc{F}_{xz}=&-B_y\\
 \mc{F}_{yz}=&-B_x\\
-\end{aligned\}
+\end{aligned}
 $$
 
 Unlike $\bs{j}$ and $\bs{p}$, which builds up a four-vector with a scalar $c\rho$ or $E/c$, $\bs{E}$ and $\bs{B}$ together build up a four-tensor.
