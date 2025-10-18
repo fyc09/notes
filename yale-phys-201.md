@@ -445,7 +445,7 @@ $$
 A=\left(\frac{V}{c},\bs{A}\right)=(A_0,A_1,A_2,A_3).
 $$
 
-We wave equations of $V$ and $\bs{A}$ become one equation:
+The wave equations of $V$ and $\bs{A}$ become one:
 
 $$
 \frac{\partial^2A}{\partial x^2}+\frac{\partial^2A}{\partial y^2}+\frac{\partial^2A}{\partial z^2}-\frac{\partial^2 A}{\partial(ct)^2}=-\mu_0J,
@@ -537,7 +537,7 @@ $$
 \mc{F}_{xy}=&-B_z\\
 \mc{F}_{xz}=&-B_y\\
 \mc{F}_{yz}=&-B_x\\
-\end{aligned}
+\end{aligned\}
 $$
 
 Unlike $\bs{j}$ and $\bs{p}$, which builds up a four-vector with a scalar $c\rho$ or $E/c$, $\bs{E}$ and $\bs{B}$ together build up a four-tensor.
@@ -561,10 +561,22 @@ F=q\mc{F}\cdot V
 }
 $$
 
-## Optics
+## Quantum Mechanics
+
+The momentum and energy of a photon is
 
 $$
+\boxed{
+\begin{gathered}
+p=\hbar k\\
+E=\hbar\omega
+\end{gathered}
+}
 $$
+
+where $\lambda$ is the wave length, and $k$ is the wave number.
+
+By $\omega=kc$ and $E^2=c^2p^2+m^2c^4$, we know that photons are *massless*.
 
 ---
 
