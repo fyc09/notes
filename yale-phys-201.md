@@ -2,9 +2,13 @@
 
 ## Electromagnetism
 
+::: hide
+
 $$
 \renewcommand{\tilde}{\widetilde}
 \newcommand{\dd}{\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\ee}{\mathrm{e}}
 \newcommand{\mc}{\mathscr}
 \newcommand{\bs}{\boldsymbol}
 $$
@@ -12,39 +16,39 @@ $$
 Coulomb's Law:
 
 $$
-\bs{F}_{21}=-\bs{F}_{12}=\frac{q_1q_2}{4 \pi \epsilon_0r_{12}^2}\mathbf{e_{12}},
+\bs F_{21}=-\bs F_{12}=\frac{q_1q_2}{4 \pi \epsilon_0r_{12}^2}\mathbf{e_{12}},
 $$
 
 where
 
 $$
-\bs{r_{12}}=|\bs{r_1}-\bs{r_2|}.
+\bs{r_{12}}=|\bs{r_1}-\bs{r_2}|.
 $$
 
 In an electric dipole, the charges are $q$ and $-q$. We call the dipole moment
 
 $$
-\bs{p}=2aq\bs{i}.
+\bs p=2aq\bs i.
 $$
 
 In an electric field, the torque on the dipole is
 
 $$
-\bs{\tau}=\bs{p}\times\bs{E}.
+\bs{\tau}=\bs p\times\bs E.
 $$
 
 Gauss's Law:
 
 $$
-\oint_{S=\partial V}\bs{E}(\bs{r})\cdot\dd\bs{S}=\frac{1}{\epsilon_0}q_{enc}=\frac{1}{\epsilon_0}\int_V\rho(\bs{r})\dd^3\bs{r},
+\oint_{S=\partial V}\bs E(\bs r)\cdot\dd\bs S=\frac{1}{\epsilon_0}q_{enc}=\frac{1}{\epsilon_0}\int_V\rho(\bs r)\dd^3\bs r,
 $$
 
-where $\rho(\bs{r})$ is the charge density at $\bs{r}$, and $q_{enc}$ is the total charge _enclosed_ in volume $V$.
+where $\rho(\bs r)$ is the charge density at $\bs r$, and $q_{enc}$ is the total charge _enclosed_ in volume $V$.
 
 Charges are distributed on a conductor's surface. On a conductor's surface, the density of electric field is
 
 $$
-\bs{E}_\bot=\frac{\sigma}{\epsilon_0}.
+\bs E_\bot=\frac{\sigma}{\epsilon_0}.
 $$
 
 Inside a conductor, the electric field is 0.
@@ -52,13 +56,13 @@ Inside a conductor, the electric field is 0.
 Energy density stored in an electric field can be calculated by the energy of a capacitor, which is
 
 $$
-U_{E}=\frac{\epsilon_0}{2}\bs{E}^2
+U_{E}=\frac{\epsilon_0}{2}\bs E^2
 $$
 
 When charges are moving in a magnetic field, the charges will experience a Lorentz force:
 
 $$
-\bs{F}=q(\bs{E}+\bs{v}\times\bs{B}).
+\bs F=q(\bs E+\bs v\times\bs B).
 $$
 
 Because the magnetic force is always perpendicular to the velocity, the force does no work.
@@ -66,33 +70,33 @@ Because the magnetic force is always perpendicular to the velocity, the force do
 The force on a segment of wire in a magnetic field is
 
 $$
-\dd\bs{F}=I\dd\bs{l}\times\bs{B}.
+\dd\bs F=I\dd\bs l\times\bs B.
 $$
 
-Consider a wire loop with a current $I$ in a magnetic field. The area of the loop is $\bs{A}$. The torque on the loop is
+Consider a wire loop with a current $I$ in a magnetic field. The area of the loop is $\bs A$. The torque on the loop is
 
 $$
-\bs{\tau}=\bs{\mu}\times\bs{B},
+\bs{\tau}=\bs{\mu}\times\bs B,
 $$
 
 where $\bs{\mu}$ is the magnetic moment,
 
 $$
-\bs{\mu}=I\bs{A}.
+\bs{\mu}=I\bs A.
 $$
 
 Biot-Savart Law:
 
 $$
-\dd\bs{B}=\frac{\mu_0}{4\pi}\frac{\dd\bs{l}\times\mathbf{e}_{\bs{r}-\bs{r'}}}{(\bs{r}-\bs{r^{\prime}})^2},
+\dd\bs B=\frac{\mu_0}{4\pi}\frac{\dd\bs l\times\mathbf{e}_{\bs r-\bs{r'}}}{(\bs r-\bs{r^{\prime}})^2},
 $$
 
-where $\bs{r}$ is the position of the current, $\bs{r^{\prime}}$ is the position of magnetic field.
+where $\bs r$ is the position of the current, $\bs{r^{\prime}}$ is the position of magnetic field.
 
 Ampere's Law:
 
 $$
-\oint_{C=\partial S}\bs{B}\cdot\dd\bs{r}=\mu_0I_{enc}=\mu_0\int_{S}\bs{j}\cdot\dd\bs{S},
+\oint_{C=\partial S}\bs B\cdot\dd\bs r=\mu_0I_{enc}=\mu_0\int_{S}\bs j\cdot\dd\bs S,
 $$
 
 where $I_{enc}$ is the total current _penetrating_ surface $S$.
@@ -101,57 +105,57 @@ Maxwell's Equations (Static):
 
 $$
 \begin{gathered}
-\oint_{S}\bs{E}\cdot\dd\bs{S}=\frac{1}{\epsilon_0}q_{enc} & (\text{Gauss's Law})\\
-\oint_{C}\bs{B}\cdot\dd\bs{r}=\mu_0I_{enc} & (\text{Ampere's Law})\\
-\oint_{C}\bs{E}\cdot\dd\bs{r}=0 & (\bs{E}\text{ is conservative})\\
-\oint_{S}\bs{B}\cdot\dd\bs{S}=0 & (\text{No single magnetic pole})
+\oint_{S}\bs E\cdot\dd\bs S=\frac{1}{\epsilon_0}q_{enc} & (\text{Gauss's Law})\\
+\oint_{C}\bs B\cdot\dd\bs r=\mu_0I_{enc} & (\text{Ampere's Law})\\
+\oint_{C}\bs E\cdot\dd\bs r=0 & (\bs E\text{ is conservative})\\
+\oint_{S}\bs B\cdot\dd\bs S=0 & (\text{No single magnetic pole})
 \end{gathered}
 $$
 
 The Lenz's Law:
 
 $$
-\mc{E}=-\frac{\dd\Phi}{\dd t},
+\mc E=-\frac{\dd\Phi}{\dd t},
 $$
 
 where $C$ is a loop made up of a real conductor, $\Phi$ is the magnetic flux through $C$,
 
 $$
-\Phi=\int_{S}\bs{B}\cdot\dd\bs{S},
+\Phi=\int_{S}\bs B\cdot\dd\bs S,
 $$
 
 where $S$ is the surface of the loop $C$.
 
-The EMF $\mc{E}$ can be calculated by the following equation:
+The EMF $\mc E$ can be calculated by the following equation:
 
 $$
-\mc{E}=\oint_{C}(\bs{E}+\bs{v}\times\bs{B})\cdot\dd\bs{l}
+\mc E=\oint_{C}(\bs E+\bs v\times\bs B)\cdot\dd\bs l
 $$
 
 Plug the definition of $\Phi$ into Lenz's Law, we get Faraday's Law:
 
 $$
-\oint_{C=\partial S}\bs{E}\cdot\dd\bs{r}=-\int_{S}\frac{\partial\bs{B}}{\partial t}\cdot\dd\bs{S}.
+\oint_{C=\partial S}\bs E\cdot\dd\bs r=-\int_{S}\frac{\partial\bs B}{\partial t}\cdot\dd\bs S.
 $$
 
-This equation replaces the 3<sup>rd</sup> equation in the previous version of Maxwell's Equation $\oint_{C}\bs{E}\cdot\dd\bs{r}=0$, which shows that a moving magnetic field can excite a _non-conservative_ electric field.
+This equation replaces the 3<sup>rd</sup> equation in the previous version of Maxwell's Equation $\oint_{C}\bs E\cdot\dd\bs r=0$, which shows that a moving magnetic field can excite a _non-conservative_ electric field.
 
 The change of flux of magnetic field through a loop can be caused by two reasons: The change of magnetic field, or the movement of loop, shown in the following equation:
 
 $$
--\mc{E}=\frac{\dd\Phi}{\dd t}=\int_{S}\frac{\partial\bs{B}}{\partial t}\cdot\dd\bs{A}+\oint_{C}(\bs{v}\times\dd\bs{l})\cdot\bs{B}.
+-\mc E=\frac{\dd\Phi}{\dd t}=\int_{S}\frac{\partial\bs B}{\partial t}\cdot\dd\bs A+\oint_{C}(\bs v\times\dd\bs l)\cdot\bs B.
 $$
 
 The energy density stored in the magnetic field can be calculated by energy in a inductor, which is
 
 $$
-U_{B}=\frac{1}{2\mu_{0}}\bs{B}^2.
+U_{B}=\frac{1}{2\mu_{0}}\bs B^2.
 $$
 
 Ampere-Maxwell Law:
 
 $$
-\oint_{C=\partial{S}}\bs{B}\cdot\dd\bs{r}=\mu_0(I_{enc}+I_{d})=\mu_0\int_{S}\left(\bs{j}+\epsilon_0\frac{\partial\bs{E}}{\partial t}\right)\cdot \dd\bs{S},
+\oint_{C=\partial{S}}\bs B\cdot\dd\bs r=\mu_0(I_{enc}+I_{d})=\mu_0\int_{S}\left(\bs j+\epsilon_0\frac{\partial\bs E}{\partial t}\right)\cdot \dd\bs S,
 $$
 
 where $I_{d}$ is displacement current
@@ -162,13 +166,15 @@ $$
 
 Maxwell's Equations:
 
+::: large
+
 $$
 \boxed{
 \begin{gathered}
-\oint_{S=\partial{V}}\bs{E}\cdot\dd\bs{S}=\frac{1}{\epsilon_0}\int_{V}\rho\dd^3r & (\text{Gauss's Law})\\
-\oint_{S=\partial{V}}\bs{B}\cdot\dd\bs{S}=0 & (\text{No single magnetic pole})\\
-\oint_{C=\partial S}\bs{E}\cdot\dd\bs{r}=\int_S\left(-\frac{\partial\bs{B}}{\partial{t}}\right)\cdot\dd\bs{S} & (\text{Faraday's Law})\\
-\oint_{C=\partial{S}}\bs{B}\cdot\dd\bs{r}=\mu_0\int_{S}\left(\bs{j}+\epsilon_0\frac{\partial\bs{E}}{\partial{t}}\right)\cdot \dd\bs{S} & (\text{Ampere-Maxwell Law})\\
+\oint_{S=\partial{V}}\bs E\cdot\dd\bs S=\frac{1}{\epsilon_0}\int_{V}\rho\dd^3r & (\text{Gauss's Law})\\
+\oint_{S=\partial{V}}\bs B\cdot\dd\bs S=0 & (\text{No single magnetic pole})\\
+\oint_{C=\partial S}\bs E\cdot\dd\bs r=\int_S\left(-\frac{\partial\bs B}{\partial{t}}\right)\cdot\dd\bs S & (\text{Faraday's Law})\\
+\oint_{C=\partial{S}}\bs B\cdot\dd\bs r=\mu_0\int_{S}\left(\bs j+\epsilon_0\frac{\partial\bs E}{\partial{t}}\right)\cdot \dd\bs S & (\text{Ampere-Maxwell Law})\\
 \end{gathered}
 }
 $$
@@ -178,10 +184,10 @@ By considering tiny cubes and loops, we can get the differential form of the Max
 $$
 \boxed{
 \begin{gathered}
-\nabla\cdot\bs{E}=\frac{\rho}{\epsilon_0} & (\text{Gauss's Law})\\
-\nabla\cdot\bs{B}=0 & (\text{No single magnetic pole})\\
-\nabla\times\bs{E}=-\frac{\partial\bs{B}}{\partial t} & (\text{Faraday's Law})\\
-\nabla\times\bs{B}=\mu_0\bs{j}+\mu_0\epsilon_0\frac{\partial \bs{E}}{\partial t} & (\text{Ampere-Maxwell Law})\\
+\nabla\cdot\bs E=\frac{\rho}{\epsilon_0} & (\text{Gauss's Law})\\
+\nabla\cdot\bs B=0 & (\text{No single magnetic pole})\\
+\nabla\times\bs E=-\frac{\partial\bs B}{\partial t} & (\text{Faraday's Law})\\
+\nabla\times\bs B=\mu_0\bs j+\mu_0\epsilon_0\frac{\partial \bs E}{\partial t} & (\text{Ampere-Maxwell Law})\\
 \end{gathered}
 }
 $$
@@ -192,8 +198,8 @@ When in a free space, where $q$ and $I$ are zero, we found a solution for Maxwel
 
 $$
 \begin{gathered}
-\frac{\partial^2\bs{E}_z}{\partial{t^2}}=\mu_0\epsilon_0\frac{\partial^2\bs{E}_z}{\partial{t^2}}\\
-\frac{\partial^2\bs{B}_x}{\partial{t^2}}=\mu_0\epsilon_0\frac{\partial^2\bs{B}_x}{\partial{t^2}}
+\frac{\partial^2\bs E_z}{\partial{t^2}}=\mu_0\epsilon_0\frac{\partial^2\bs E_z}{\partial{t^2}}\\
+\frac{\partial^2\bs B_x}{\partial{t^2}}=\mu_0\epsilon_0\frac{\partial^2\bs B_x}{\partial{t^2}}
 \end{gathered}
 $$
 
@@ -203,7 +209,7 @@ $$
 c=\frac{1}{\sqrt{\mu_0\epsilon_0}}.
 $$
 
-When $\bs{E}=\hat{k}E_0\sin(ky-\omega t)$, $\bs{B}=\hat{\imath} E_0\sin(ky-\omega t)$, we can get the relation between $E_0$ and $B_0$:
+When $\bs E=\hat{k}E_0\sin(ky-\omega t)$, $\bs B=\hat{\imath} E_0\sin(ky-\omega t)$, we can get the relation between $E_0$ and $B_0$:
 
 $$
 E_0=\frac{\omega}{k}B_0=\frac{c^2k}{\omega}B_0=cB_0,
@@ -232,13 +238,13 @@ $$
 Poynting Vector:
 
 $$
-\bs{S}=\frac{\bs{E}\times\bs{B}}{c}.
+\bs S=\frac{\bs E\times\bs B}{c}.
 $$
 
 The Poynting vector has the direction of the electromagnetic wave, and the magnitude of the Poynting vector is the intensity of the wave:
 
 $$
-\left\vert\bs{S}\right\vert=I.
+\left\vert\bs S\right\vert=I.
 $$
 
 ## Circuits
@@ -344,26 +350,26 @@ For a moving charge, we have
 $$
 \begin{gathered}
 \rho=\frac{\rho_0}{\sqrt{1-u^2/c^2}}\\
-j=\rho\bs{v}=\frac{\rho_0\bs{v}}{\sqrt{1-v^2/c^2}}
+j=\rho\bs v=\frac{\rho_0\bs v}{\sqrt{1-v^2/c^2}}
 \end{gathered}
 $$
 
 This has the same form as the mass and momentum, so the transformation is same as the $m$ and $p$,
 
 $$
-\left[\frac{E}{c^2},\bs{p}\right]\leftrightarrow[\rho,\bs{j}].
+\left[\frac{E}{c^2},\bs p\right]\leftrightarrow[\rho,\bs j].
 $$
 
 We multiply the first term by $c$ to have the same dimension, so we have
 
 $$
-P=\left(\frac{E}{c},\bs{p}\right)\leftrightarrow J=(\rho c,\bs{j})\leftrightarrow X=(ct,\bs{x}).
+P=\left(\frac{E}{c},\bs p\right)\leftrightarrow J=(\rho c,\bs j)\leftrightarrow X=(ct,\bs x).
 $$
 
 _Four-current_ $J$ can be written as
 
 $$
-J=(J_0,J_1,J_2,J_3)=(\rho c,\bs{j}).
+J=(J_0,J_1,J_2,J_3)=(\rho c,\bs j).
 $$
 
 By charge conservation, we have
@@ -382,32 +388,32 @@ Consider these 2 equations from Maxwell's equations that is independent of $\rho
 
 $$
 \begin{gathered}
-\nabla\cdot\bs{B}=0\\
-\nabla\times\bs{E}+\frac{\partial\bs{B}}{\partial t}=0\\
+\nabla\cdot\bs B=0\\
+\nabla\times\bs E+\frac{\partial\bs B}{\partial t}=0\\
 \end{gathered}
 $$
 
-We define $\bs{A}$ as following,
+We define $\bs A$ as following,
 
 $$
 \begin{gathered}
-\bs{B}=\nabla\times\bs{A}\\
-\bs{E}=-\nabla V-\frac{\partial\bs{A}}{\partial t}\\
+\bs B=\nabla\times\bs A\\
+\bs E=-\nabla V-\frac{\partial\bs A}{\partial t}\\
 \end{gathered}
 $$
 
 which is equivalent to the previous equations from Maxwell's equations.
 
-In this definition, a given $\bs{A}$ and $V$ pair can describe a unique electromagnetic field, but for a given electromagnetic field, there are many different groups of $\bs{A}$ and $V$. For $\bs{A}$ and $V$, $\tilde{\bs{A}}$ and $\tilde{V}$ are also valid:
+In this definition, a given $\bs A$ and $V$ pair can describe a unique electromagnetic field, but for a given electromagnetic field, there are many different groups of $\bs A$ and $V$. For $\bs A$ and $V$, $\tilde{\bs A}$ and $\tilde{V}$ are also valid:
 
 $$
 \begin{gathered}
-\tilde{\bs{A}}=\bs{A}+\nabla\chi\\
+\tilde{\bs A}=\bs A+\nabla\chi\\
 \tilde{V}=V-\frac{\partial\chi}{\partial t}
 \end{gathered}
 $$
 
-This is called a _gauge transformation_. To make sure there is only one group of $\bs{A}$ and $V$, we can add a regularization term. When discussing the relativity, we use Lorentz gauge, which is
+This is called a _gauge transformation_. To make sure there is only one group of $\bs A$ and $V$, we can add a regularization term. When discussing the relativity, we use Lorentz gauge, which is
 
 $$
 \frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_z}{\partial z}+\frac{1}{c^2}\frac{\partial V}{\partial t}=0.
@@ -416,36 +422,36 @@ $$
 This is also equivalent to
 
 $$
-\nabla\cdot\bs{A}=-\frac{1}{c^2}\frac{\partial V}{\partial t}.
+\nabla\cdot\bs A=-\frac{1}{c^2}\frac{\partial V}{\partial t}.
 $$
 
 The other two Maxwell's equations are
 
 $$
 \begin{gathered}
-\nabla\cdot\bs{E}=\frac{\rho}{\epsilon_0}\\
-\nabla\times\bs{B}=\mu_0\bs{j}+\mu_0\epsilon_0\frac{\partial\bs{E}}{\partial t}
+\nabla\cdot\bs E=\frac{\rho}{\epsilon_0}\\
+\nabla\times\bs B=\mu_0\bs j+\mu_0\epsilon_0\frac{\partial\bs E}{\partial t}
 \end{gathered}
 $$
 
-We plug the definition of $V$ and $\bs{A}$ and Lorentz transformation into these 2 equations. We get
+We plug the definition of $V$ and $\bs A$ and Lorentz transformation into these 2 equations. We get
 
 $$
 \begin{gathered}
 \frac{\partial^2V}{\partial x^2}+\frac{\partial^2V}{\partial y^2}+\frac{\partial^2V}{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 V}{\partial t^2}=-\frac{\rho}{\epsilon_0}\\
-\frac{\partial^2\bs{A}}{\partial x^2}+\frac{\partial^2\bs{A}}{\partial y^2}+\frac{\partial^2\bs{A}}{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 \bs{A}}{\partial t^2}=-\mu_0\bs{j}
+\frac{\partial^2\bs A}{\partial x^2}+\frac{\partial^2\bs A}{\partial y^2}+\frac{\partial^2\bs A}{\partial z^2}-\frac{1}{c^2}\frac{\partial^2 \bs A}{\partial t^2}=-\mu_0\bs j
 \end{gathered}
 $$
 
-This is a wave equation, showing the delay required by relativity. $A^\prime(t,\bs{r}^\prime)$ will influence $A(t,\bs{r})$ after $\delta t=\left\vert\bs{r}-\bs{r}^\prime\right\vert/c$.
+This is a wave equation, showing the delay required by relativity. $A^\prime(t,\bs r^\prime)$ will influence $A(t,\bs r)$ after $\delta t=\left\vert\bs r-\bs r^\prime\right\vert/c$.
 
-We combine $V$ and $\bs{A}$ to get four-potential,
+We combine $V$ and $\bs A$ to get four-potential,
 
 $$
-A=\left(\frac{V}{c},\bs{A}\right)=(A_0,A_1,A_2,A_3).
+A=\left(\frac{V}{c},\bs A\right)=(A_0,A_1,A_2,A_3).
 $$
 
-The wave equations of $V$ and $\bs{A}$ become one:
+The wave equations of $V$ and $\bs A$ become one:
 
 $$
 \frac{\partial^2A}{\partial x^2}+\frac{\partial^2A}{\partial y^2}+\frac{\partial^2A}{\partial z^2}-\frac{\partial^2 A}{\partial(ct)^2}=-\mu_0J,
@@ -479,7 +485,8 @@ $$
 Note that we did not change the Maxwell's Equations, but rewrite it in four-vector form.
 
 > ## Tensor
-> Say vectors $\bs{V}=(V_x,V_y,V_z)$, $\bs{W}=(W_x,W_y,W_z)$, we can build a Tensor $\bs{T}$:
+>
+> Say vectors $\bs V=(V_x,V_y,V_z)$, $\bs W=(W_x,W_y,W_z)$, we can build a Tensor $\bs T$:
 >
 > $$
 > \begin{gathered}
@@ -496,14 +503,14 @@ Note that we did not change the Maxwell's Equations, but rewrite it in four-vect
 >
 > $$
 > \begin{gathered}
-> \mc{A}_{ij}=-\mc{A}_{ji}
+> \mc A_{ij}=-\mc A_{ji}
 > \end{gathered}
 > $$
 >
 > It is obvious that
 >
 > $$
-> \mc{A}_{ii}=0
+> \mc A_{ii}=0
 > $$
 >
 > The cross product of two vectors is an antisymmetric tensor. In 1 dimension, there is no cross product (0 components); In 2D, the cross product is a value (1 components); In 3D, the cross product is a vector (3 components); In 4D, the cross product can only be represented by a tensor.
@@ -514,31 +521,31 @@ $$
 T^\prime_{01}=\frac{T_{01}-\beta T_{00}-\beta T_{11}+\beta^2T_{22}}{1-\beta^2}.
 $$
 
-Similar to $\bs{B}=\nabla\times\bs{A}$, we define $\mc{F}$ as the curl of four-potential $A$, that is,
+Similar to $\bs B=\nabla\times\bs A$, we define $\mc F$ as the curl of four-potential $A$, that is,
 
 $$
-\mc{F}_{\mu\nu}=\nabla_\mu A_\nu-\nabla_\nu A_\mu.\\
+\mc F_{\mu\nu}=\nabla_\mu A_\nu-\nabla_\nu A_\mu.\\
 $$
 
 Or, specifically,
 
 $$
 \begin{aligned}
-\mc{F}_{0x}=&-E_x/c\\
-\mc{F}_{0y}=&-E_y/c\\
-\mc{F}_{0z}=&-E_z/c\\
-\mc{F}_{xy}=&-B_z\\
-\mc{F}_{xz}=&-B_y\\
-\mc{F}_{yz}=&-B_x\\
+\mc F_{0x}=&-E_x/c\\
+\mc F_{0y}=&-E_y/c\\
+\mc F_{0z}=&-E_z/c\\
+\mc F_{xy}=&-B_z\\
+\mc F_{xz}=&-B_y\\
+\mc F_{yz}=&-B_x\\
 \end{aligned}
 $$
 
-Unlike $\bs{j}$ and $\bs{p}$, which builds up a four-vector with a scalar $c\rho$ or $E/c$, $\bs{E}$ and $\bs{B}$ together build up a four-tensor.
+Unlike $\bs j$ and $\bs p$, which builds up a four-vector with a scalar $c\rho$ or $E/c$, $\bs E$ and $\bs B$ together build up a four-tensor.
 
 Now, we can get the four-force of Lorentz force,
 
 $$
-F=q\mc{F}\cdot V.
+F=q\mc F\cdot V.
 $$
 
 Finally, we get these equations,
@@ -548,15 +555,15 @@ $$
 \begin{gathered}
 \nabla\cdot\nabla A=\mu_0J\\
 \nabla\cdot A=0\\
-\mc{F}_{\mu\nu}=\nabla_\mu A_\nu-\nabla_\nu A_\mu.\\
-F=q\mc{F}\cdot V
+\mc F_{\mu\nu}=\nabla_\mu A_\nu-\nabla_\nu A_\mu.\\
+F=q\mc F\cdot V
 \end{gathered}
 }
 $$
 
 ## Quantum Mechanics
 
-The momentum and energy of a photon is
+The momentum and energy of a photon are
 
 $$
 \boxed{
@@ -567,9 +574,228 @@ E=\hbar\omega
 }
 $$
 
-where $\lambda$ is the wave length, and $k$ is the wave number.
+where $\lambda$ is the wavelength, and $k$ is the wave number.
 
-By $\omega=kc$ and $E^2=c^2p^2+m^2c^4$, we know that photons are *massless*.
+By $\omega=kc$ and $E^2=c^2p^2+m^2c^4$, we know that photons are _massless_.
+
+Particles also have similar properties: The wavelength of the particle is called _de Broglie wavelength_, or _matter wavelength_,
+
+$$
+\boxed{\lambda=\frac{2\pi\hbar}{p}}.
+$$
+
+However, photons and particles have differences:
+
+1. Photons are massless; particles are not.
+2. Photons has to travel at $c$; particles can be brought to rest.
+3. Photons can be absorbed or emitted; particles cannot appear or disapear.
+
+We describe a matter wave with a wave function $\psi(y)$. The intensity of the wave is given by
+
+$$
+I(y)=|\psi(y)|^2.
+$$
+
+For particles, $I(y)$ means the probability of finding the particle at $y$.
+
+The intensity of an electromagnetic wave is given by
+
+$$
+I(y) \propto |\bs E(y)|^2 + |\bs B(y)|^2
+$$
+
+For photons, $I(y)$ means the probability of _obsorbing_ a photon at $y$. Note that the intensity of a photon is _NOT_ the probability of finding a photon, because photons do not have a wave function $\psi(y)$.
+
+_Heisenberg Uncertainty Principle_: It is impossible to prepare a particle in a state in which its momentum and position (along one axis) are exactly known. The product of the uncertainties $\Delta x$ and $\Delta p$ is required to obey
+
+$$
+\Delta x\Delta p\geq \frac{\hbar}{2}.
+$$
+
+The wave function is given by a postulate: A particle of momentum p in the x-direction is described by a wave function:
+
+$$
+\psi_p(x)=A\exp\left[\frac{\ii px}{\hbar}\right]
+$$
+
+The momentum is certain, so $\Delta p=0$. We need $\Delta x=\infty$:
+
+$$
+|\psi_p|^2=|A|^2\exp\left[\frac{\ii px}{\hbar}\right]\exp\left[-\frac{\ii px}{\hbar}\right]=|A|^2
+$$
+
+Consider the inference of two particles with certain momentum, we have
+
+$$
+\begin{gathered}
+\psi(r_1,r_2)=A^\prime\left(\exp\left[\frac{\ii pr_1}{\hbar}\right]+\exp\left[\frac{\ii pr_2}{\hbar}\right]\right);\\
+|\psi(r_1,r_2)|^2=4|A^\prime|^2\cos^2\left[\frac{k(r_1-r_2)}{2}\right].
+\end{gathered}
+$$
+
+After measureing, $\psi(x)$ and $P(x)$ collapse into narrow spikes. Collapsed wave function only applies right after the particle is observed, and can change over time.
+
+Requirements for wave function $\psi(x)$:
+
+1. $\psi(x)$ should be continuous and sigle-valued.
+2. $\psi(x)$ should be square-integrable, but with two exceptions:
+   - State of definite momentum, so $|\psi(x)|^2$ is a constant.
+   - State of definite position, so $\psi(x)$ has a spike centered at some point.
+
+_Normalization condition_: All probability must sum to $1$:
+
+$$
+\int_{-\infty}^{\infty}|\psi(x)|^2\dd x=1.
+$$
+
+> ## Mean and Uncertainty
+>
+> Say a variable $v$ has possible values $v_1, v_2, \cdots, v_n$ and corresponding probabilities $P(1), P(2), \cdots, P(n)$.
+>
+> Mean: weighted average of all possible values:
+>
+> $$
+> \langle v\rangle=\sum_i P(i)v_i
+> $$
+>
+> Standard deviation: square root of the variance:
+>
+> $$
+> \Delta v=\sqrt{\sum_i P(i)(v_i-\langle v\rangle)^2}
+> $$
+
+We pretend the univers is large but finite, with no boundary. We take it to be a circle, so we consider the wave function to be periodic, so that
+
+$$
+\psi(x)=\psi(x+L)
+p
+$$
+
+We can get the normalized $\psi(x)$:
+
+$$
+\psi(x)=\frac{1}{\sqrt{L}}\exp\left[\frac{\ii px}{\hbar}\right]
+$$
+
+The probability density is a constant,
+
+$$
+\begin{aligned}
+P(x)&=|\psi(x)|^2=\psi^\ast(x)\psi(x) \\
+&=\frac{1}{\sqrt{L}}\exp\left[-\frac{\ii px}{\hbar}\right]\cdot\frac{1}{\sqrt{L}}\exp\left[\frac{\ii px}{\hbar}\right] \\
+&=\frac{1}{L}.
+\end{aligned}
+$$
+
+However the periodic wave function requires,
+
+$$
+\begin{gathered}
+&&\exp\left[\frac{\ii pL}{\hbar}\right]=1 \\
+\Leftrightarrow&&p_m=\frac{2m\pi\hbar}{L}, m\in\mathbb{Z}.
+\end{gathered}
+$$
+
+We use $m$ instead of $p_m$ as the label for the state. $p_m$ are only allowed to be some values, and this is called quantumization.
+
+For a particle moving on a circle, we have
+
+$$
+\begin{gathered}
+&&p=\frac{2\pi\hbar m}{L}=\frac{2\pi\hbar m}{2\pi R}\\
+\Leftrightarrow&&pR=m\hbar.
+\end{gathered}
+$$
+
+We found quantization of angular momentum $pR$ in multiples of $\hbar$, We plug this into wave function, we get
+
+$$
+\psi_p(x)=\frac{1}{\sqrt{L}}\exp[\ii m\theta]=\psi_m(\theta)
+$$
+
+The *integral of $\psi$* is constantly $0$,
+
+$$
+\int_0^L\psi_p(x)\dd x=0,
+$$
+
+except for $p=0$,
+
+$$
+\int_0^L\psi_0(x)\dd x=\int_0^L\frac{1}{\sqrt{L}}=\sqrt{L}.
+$$
+
+Consider 2 normalized wave functions,
+
+$$
+\begin{gathered}
+\psi_{p_1}=\frac{1}{\sqrt{L}}\exp\left[\frac{\ii p_1x}{\hbar}\right], \\
+\psi_{p_2}=\frac{1}{\sqrt{L}}\exp\left[\frac{\ii p_2x}{\hbar}\right]. \\
+\end{gathered}
+$$
+
+The *superposition* of these two wave functions is
+
+$$
+\psi(x)=A(p_1)\psi_{p_1}+A(p_2)\psi_{p_2}.
+$$
+
+*Fourier's theorem*:
+
+Every allowed wave function $\psi(x)$ obeying $\psi(x)=\psi(x+L)$ may be written as a
+superposition of $\psi_p(x)$'s with suitable coefficients $A(p)$:
+
+$$
+\psi(x)=\sum_{m=-\infty}^{+\infty}A(p_m)\psi_m(x).
+$$
+
+$A(p)$ is given by
+
+$$
+A(p)=\int_0^L\psi^\ast_p(x)\psi(x)\dd x.
+$$
+
+That means we may expand any $\psi(x)$ as a linear combination:
+
+$$
+\psi(x)=\sum_\alpha A(\alpha) \psi_\alpha(x),
+$$
+
+where $\alpha$ is an allowed value of some variable.
+
+The states of definite energy $E$ are the normalizable single-valued solutions to the time-independent Schrödinger equation:
+
+$$
+-\frac{\hbar^2}{2m}\frac{\dd^2\psi_E(x)}{\dd x^2}+V(x)\psi_E(x)=E\psi_E(x).
+$$
+
+where $V(x)$ is the potential at position $x$.
+
+*Bound states* are states in which the enery $E$ is less than $V(\pm\infty)$.
+
+In such cases, we will only find solutions at some quantized values of $E_n$ labeed by $n$, with corresponding wave functions $\psi_n(x)$.
+
+*Free particles*
+
+Free particles means $V(x)=0$. In this case, we have
+
+$$
+\psi_E(x)=A\ee^{\ii kx}+B\ee^{-\ii kx},\quad k^2=\frac{2mE}{\hbar^2}.
+$$
+
+Comparing with the wave function of definite momentum, we found
+
+$$
+\frac{p^2}{2m}=E,
+$$
+
+which is the same as that in classical mechanics.
+
+Hence, the wave function of label $n$ is
+
+$$
+\psi_n(x)=A\exp\left[\frac{2\pi n\ii x}{L}\right] + B\exp\left[-\frac{2\pi n\ii x}{L}\right]
+$$
 
 ---
 

@@ -9,15 +9,18 @@ with open(filename, "r", encoding="utf-8") as f:
 
 html = markdown.markdown(
     text,
-    extensions=["pymdownx.arithmatex"],
+    extensions=["pymdownx.arithmatex", "markdown.extensions.tables"],
     extension_configs={"pymdownx.arithmatex": {"generic": True}},
+    tab_length=2,
 )
 html = (
     """
+    <!DOCTYPE html>
     <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script src="/style.js"></script>
     </head>"""
     "<body>\n" + html + "</body>"
 )
