@@ -26,7 +26,7 @@
 
 ## Reading & Writing
 
-### Retorical Reading Analysis
+### Rhetorical Reading Analysis
 
 ::: large whole
 
@@ -51,11 +51,11 @@
 
 Remark.
 
-- Types of Argumentation:
-  1. Opinion: To expess the Author's opinion.
+- Types of Argumentations:
+  1. Opinion: To express the Author's opinion.
   2. Persuasion: To persuade the reader.
-  3. Argumentative: To argume some opinion is incorrect.
-- Mode of Persuasion: Ethos, Pathos, Logos.
+  3. Argumentative: To argue some opinion is incorrect.
+- Modes of Persuasion: Ethos, Pathos, Logos.
 - Elements of Narration: Time, Place, Characters, Events, Order, Point of View.
 - Plot: Exposition, Rising Action, Climax, Falling Action, Resolution.
 - Organizational Patterns:
